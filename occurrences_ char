@@ -1,0 +1,14 @@
+function countCharacterOccurrences(str, charToCount) {
+    let count = 0; 
+    for (let i = 0; i < str.length; i++) {
+         if (str[i] === charToCount) {
+            count++; 
+        }
+    }
+
+    return count; 
+}
+const exampleString = "Akshaii";
+const characterToCount = 'i';
+
+console.log(countCharacterOccurrences(exampleString, characterToCount));  // output : 2
