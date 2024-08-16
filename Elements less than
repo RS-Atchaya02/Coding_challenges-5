@@ -1,0 +1,14 @@
+function countElementsLessThan(arr, value) {
+    let count = 0; 
+    for (let i = 0; i < arr.length; i++) {
+        
+        if (arr[i] < value) {
+            count++; 
+        }
+    }
+
+    return count; 
+}
+const array = [1, 4, 7, 2, 9, 3];
+const givenValue = 5;
+console.log(countElementsLessThan(array, givenValue)); // Output: 4 (1, 4, 2, 3 are less than 5)
