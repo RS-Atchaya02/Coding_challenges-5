@@ -1,0 +1,13 @@
+function findFirstRepeatedCharacter(str) {
+    const seenCharacters = new Set(); 
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i]; 
+        if (seenCharacters.has(char)) {
+            return char; 
+        }
+        seenCharacters.add(char);
+    }
+    return null;
+}
+const exampleString = "swiss";
+console.log(findFirstRepeatedCharacter(exampleString)); // Output: 's'
